@@ -1,74 +1,69 @@
 module.exports.config = {
-    name: "leave",
-    eventType: ["log:unsubscribe"],
-    version: "2.0.0",
-    credits: "🔥 Remake by Pcoder 🔥",
-    description: "Thông báo thành viên rời nhóm kèm random ảnh/GIF/Video.",
-    dependencies: {
-        "fs-extra": "",
-        "path": ""
-    }
+  name: "leave",
+  eventType: ["log:unsubscribe"],
+  version: "1.1.0",
+  credits: "HĐGN (mod by H.Thanh, fix by Kenne400k)",
+  description: "Thông báo Bot hoặc người rời khỏi nhóm có random gif/ảnh/video",
+  dependencies: {
+    "fs-extra": "",
+    "path": "",
+    "moment-timezone": ""
+  }
 };
 
-const checkttPath = __dirname + '/../commands/checktuongtac/';
+module.exports.run = async function ({ api, event, Users }) {
+  // Nếu bot tự rời nhóm, không gửi thông báo
+  if (event.logMessageData.leftParticipantFbId == api.getCurrentUserID()) return;
 
-module.exports.onLoad = function () {
-    const { existsSync, mkdirSync } = global.nodemodule["fs-extra"];
-    const { join } = global.nodemodule["path"];
+  const { threadID } = event;
+  const moment = require("moment-timezone");
+  const time = moment.tz("Asia/Ho_Chi_Minh").format("DD/MM/YYYY || HH:mm:ss");
+  const hours = parseInt(moment.tz("Asia/Ho_Chi_Minh").format("HH"));
+  const fullYear = moment().tz("Asia/Ho_Chi_Minh").format("DD/MM/YYYY");
 
-    const path = join(__dirname, "cache", "leaveGif");
-    if (!existsSync(path)) mkdirSync(path, { recursive: true });
+  // Lấy thông tin người rời nhóm
+  let getData = {};
+  try {
+    getData = await Users.getData(event.logMessageData.leftParticipantFbId);
+  } catch { getData = {}; }
 
-    const path2 = join(path, "randomgif");
-    if (!existsSync(path2)) mkdirSync(path2, { recursive: true });
-};
+  const name = getData.name || "Người dùng";
+  // Nếu tự rời thì type là "rời", nếu bị quản lý đuổi thì type là "bị quản lý đuổi"
+  const type = (event.author == event.logMessageData.leftParticipantFbId) ? "𝑟𝑜̛̀𝑖" : "𝑏𝑖̣ 𝑞𝑢𝑎̉𝑛 𝑙𝑦́ đ𝑢𝑜̂̉𝑖";
 
-module.exports.run = async function ({ api, event, Users, Threads }) {
-    if (event.logMessageData.leftParticipantFbId == api.getCurrentUserID()) return;
-    
-    const { createReadStream, existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } = global.nodemodule["fs-extra"];
-    const { join } = global.nodemodule["path"];
-    const { threadID } = event;
-    const moment = require("moment-timezone");
-    const time = moment.tz("Asia/Ho_Chi_Minh").format("DD/MM/YYYY || HH:mm:ss");
-
-    const data = global.data.threadData.get(parseInt(threadID)) || (await Threads.getData(threadID)).data;
-    const iduser = event.logMessageData.leftParticipantFbId;
-    const name = global.data.userName.get(iduser) || await Users.getNameUser(iduser);
-    const type = (event.author == iduser) ? "🌀 𝘁𝘂̛̣ 𝗿𝗼̛̛̀𝗶 𝗸𝗵𝗼̉𝗶 𝗯𝗼𝘅" : "💥 𝗯𝗶̣ 𝗾𝘂𝗮̉𝗻 𝘁𝗿𝗶̣ 𝘀𝘂́𝘁 𝗯𝗮𝘆";
-
-    // Cập nhật dữ liệu tương tác nếu có
-    if (existsSync(checkttPath + threadID + '.json')) {
-        const threadData = JSON.parse(readFileSync(checkttPath + threadID + '.json'));
-        ["week", "day", "total"].forEach(key => {
-            const index = threadData[key].findIndex(e => e.id == iduser);
-            if (index !== -1) threadData[key].splice(index, 1);
-        });
-        writeFileSync(checkttPath + threadID + '.json', JSON.stringify(threadData, null, 4));
+  // Random media từ thư mục nếu có (bạn có thể sửa sang dùng global.khanhdayr nếu thích)
+  let randomAttachment = [];
+  try {
+    const { join } = require("path");
+    const { readdirSync, existsSync, createReadStream } = require("fs-extra");
+    const mediaPath = join(__dirname, "data", "leaveMedia");
+    if (existsSync(mediaPath)) {
+      const files = readdirSync(mediaPath);
+      if (files.length > 0) {
+        const file = files[Math.floor(Math.random() * files.length)];
+        randomAttachment = [createReadStream(join(mediaPath, file))];
+      }
     }
+  } catch (e) {}
 
-    // Nội dung thông báo
-    const msgTemplate = `
-📢 | 『 𝗧𝗛𝗔̀𝗡𝗛 𝗩𝗜𝗘̂𝗡 𝗥𝗢̛̀𝗜 𝗡𝗛𝗢́𝗠 』\n━━━━━━━━━━━━━\n
-👤 | 𝗧𝗲̂𝗻: {name}\n🆔 | 𝗜𝗗: {iduser}\n💢 | 𝗧𝗿𝗮̣𝗻𝗴 𝘁𝗵𝗮́𝗶: {type}\n
-🔗 | 𝗣𝗿𝗼𝗳𝗶𝗹𝗲: https://m.facebook.com/{iduser}\n
-⏰ | 𝗧𝗵𝗼̛̀𝗶 𝗴𝗶𝗮𝗻: {time}\n━━━━━━━━━━━━━\n
-🚀 | 𝗖𝗵𝘂́𝗰 𝗯𝗮̣𝗻 𝗰𝗼̂́ 𝗴𝗮̆́𝗻𝗴 𝗴𝗶𝗮̉𝗶 𝗻𝗴𝗵𝗶𝗲̣̂𝗽, 𝗵𝗲𝗻 𝗴𝗮̣̆𝗽 𝗹𝗮̣𝗶 𝗮𝗻𝗵 𝗲𝗺 𝘁𝗿𝗼𝗻𝗴 𝗺𝗼̣̂𝘁 𝗱𝗶̣𝗽 𝗸𝗵𝗮́𝗰! 🍑
-`;
+  // Nội dung thông báo đẹp và rõ ràng
+  let msg = 
+`😢 𝑇𝑎̣𝑚 𝑏𝑖𝑒̣̂𝑡 {name} đã {type} 𝑘ℎ𝑜̉𝑖 𝑛ℎ𝑜́𝑚!
+━━━━━━━━━━━━━━━
+🔗 𝐹𝐵: m.me/{iduser}
+❤️‍🔥 𝑇ℎ𝑜̛̀𝑖 𝑔𝑖𝑎𝑛 𝑜𝑢𝑡: 𝑏𝑢𝑜̂̉𝑖 {session} || {time}
+🗓️ 𝑁𝑔𝑎̀𝑦 𝑟𝑎: {fullYear}
+━━━━━━━━━━━━━━━
+🤖 𝐶𝑎̉𝑚 𝑜̛𝑛 {name} đ𝑎̃ đ𝑜̂̀𝑛𝑔 ℎ𝑎̀𝑛ℎ 𝑐𝑢̀𝑛𝑔 𝑛ℎ𝑜́𝑚 trong thời gian qua!`;
 
-    var msg = msgTemplate.replace(/\{name}/g, name).replace(/\{type}/g, type).replace(/\{iduser}/g, iduser).replace(/\{time}/g, time);
+  msg = msg.replace(/{iduser}/g, event.logMessageData.leftParticipantFbId)
+           .replace(/{name}/g, name)
+           .replace(/{type}/g, type)
+           .replace(/{session}/g, hours <= 10 ? "𝑠𝑎́𝑛𝑔" : hours <= 12 ? "𝑡𝑟𝑢̛𝑎" : hours <= 18 ? "𝑐ℎ𝑖𝑒̂̀𝑢" : "𝑡𝑜̂́𝑖")
+           .replace(/{fullYear}/g, fullYear)
+           .replace(/{time}/g, time);
 
-    // Lấy random ảnh/GIF/Video
-    const path = join(__dirname, "cache", "leaveGif");
-    const gifPath = join(path, `${threadID}.gif`);
-    const randomPath = readdirSync(join(path, "randomgif"));
+  let formPush = { body: msg, attachment: randomAttachment.length > 0 ? randomAttachment : undefined };
 
-    let formPush;
-    if (existsSync(gifPath)) formPush = { body: msg, attachment: createReadStream(gifPath) };
-    else if (randomPath.length !== 0) {
-        const pathRandom = join(path, "randomgif", `${randomPath[Math.floor(Math.random() * randomPath.length)]}`);
-        formPush = { body: msg, attachment: createReadStream(pathRandom) };
-    } else formPush = { body: msg };
-
-    return api.sendMessage(formPush, threadID);
+  return api.sendMessage(formPush, threadID);
 };

@@ -1,0 +1,233 @@
+✖ [ PCODER ]  𝐅𝐚𝐢𝐥 1duaxe
+    → Error: libcairo.so.2: cannot open shared object file: No such file or directory
+    at Module._extensions..node (node:internal/modules/cjs/loader:1651:18)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (/root/filefree-Pbot/node_modules/canvas/lib/bindings.js:3:18)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (/root/filefree-Pbot/node_modules/canvas/lib/canvas.js:9:18)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+
+✖ [ PCODER ]  𝐅𝐚𝐢𝐥 2048
+    → Error: libcairo.so.2: cannot open shared object file: No such file or directory
+    at Module._extensions..node (node:internal/modules/cjs/loader:1651:18)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (/root/filefree-Pbot/node_modules/canvas/lib/bindings.js:3:18)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (/root/filefree-Pbot/node_modules/canvas/lib/canvas.js:9:18)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+
+✖ [ PCODER ]  𝐅𝐚𝐢𝐥 altp
+    → Error: libcairo.so.2: cannot open shared object file: No such file or directory
+    at Module._extensions..node (node:internal/modules/cjs/loader:1651:18)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (/root/filefree-Pbot/node_modules/canvas/lib/bindings.js:3:18)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (/root/filefree-Pbot/node_modules/canvas/lib/canvas.js:9:18)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+
+✖ [ PCODER ]  𝐅𝐚𝐢𝐥 caro
+    → Error: libcairo.so.2: cannot open shared object file: No such file or directory
+    at Module._extensions..node (node:internal/modules/cjs/loader:1651:18)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (/root/filefree-Pbot/node_modules/canvas/lib/bindings.js:3:18)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (/root/filefree-Pbot/node_modules/canvas/lib/canvas.js:9:18)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+
+✖ [ PCODER ]  𝐅𝐚𝐢𝐥 covua
+    → Error: libcairo.so.2: cannot open shared object file: No such file or directory
+    at Module._extensions..node (node:internal/modules/cjs/loader:1651:18)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (/root/filefree-Pbot/node_modules/canvas/lib/bindings.js:3:18)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (/root/filefree-Pbot/node_modules/canvas/lib/canvas.js:9:18)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+
+✖ [ PCODER ]  𝐅𝐚𝐢𝐥 domin
+    → Error: libcairo.so.2: cannot open shared object file: No such file or directory
+    at Object.Module._extensions..node (node:internal/modules/cjs/loader:1651:18)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (/root/filefree-Pbot/node_modules/canvas/lib/bindings.js:3:18)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (/root/filefree-Pbot/node_modules/canvas/lib/canvas.js:9:18)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+
+✖ [ PCODER ]  𝐅𝐚𝐢𝐥 globalp
+    → Error: Cannot find module './../../pdata/data_dongdev/datajson/chill.json'
+Require stack:
+- /root/filefree-Pbot/modules/commands/globalp.js
+- /root/filefree-Pbot/main.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:1043:27)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (/root/filefree-Pbot/modules/commands/globalp.js:1:12)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at /root/filefree-Pbot/main.js:366:24
+    at /root/filefree-Pbot/f/Main.js:1221:17
+    at tryCatcher (/root/filefree-Pbot/f/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:604:18)
+
+✖ [ PCODER ]  𝐅𝐚𝐢𝐥 rela
+    → Error: libcairo.so.2: cannot open shared object file: No such file or directory
+    at Object.Module._extensions..node (node:internal/modules/cjs/loader:1651:18)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (/root/filefree-Pbot/node_modules/canvas/lib/bindings.js:3:18)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (/root/filefree-Pbot/node_modules/canvas/lib/canvas.js:9:18)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+
+✖ [ PCODER ]  𝐅𝐚𝐢𝐥 simtest1
+    → Error: Tên module bị trùng với một module mang cùng tên khác!
+    at /root/filefree-Pbot/main.js:368:75
+    at /root/filefree-Pbot/f/Main.js:1221:17
+    at tryCatcher (/root/filefree-Pbot/f/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:729:18)
+    at Promise._fulfill (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:673:18)
+    at Promise._resolveCallback (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:466:57)
+    at Promise._settlePromiseFromHandler (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:559:17)
+    at Promise._settlePromise (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:729:18)
+    at Promise._fulfill (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:673:18)
+    at Promise._resolveCallback (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:466:57)
+    at Promise._settlePromiseFromHandler (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:559:17)
+
+✖ [ PCODER ]  𝐅𝐚𝐢𝐥 text
+    → Error: Cannot find module 'tesseract.js'
+Require stack:
+- /root/filefree-Pbot/modules/commands/text.js
+- /root/filefree-Pbot/main.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:1043:27)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (/root/filefree-Pbot/modules/commands/text.js:1:19)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at /root/filefree-Pbot/main.js:366:24
+    at /root/filefree-Pbot/f/Main.js:1221:17
+    at tryCatcher (/root/filefree-Pbot/f/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:604:18)
+
+✖ [ PCODER ]  𝐅𝐚𝐢𝐥 tx4
+    → Error: Tên module bị trùng với một module mang cùng tên khác!
+    at /root/filefree-Pbot/main.js:368:75
+    at /root/filefree-Pbot/f/Main.js:1221:17
+    at tryCatcher (/root/filefree-Pbot/f/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:729:18)
+    at Promise._fulfill (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:673:18)
+    at Promise._resolveCallback (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:466:57)
+    at Promise._settlePromiseFromHandler (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:559:17)
+    at Promise._settlePromise (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:729:18)
+    at Promise._fulfill (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:673:18)
+    at Promise._resolveCallback (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:466:57)
+    at Promise._settlePromiseFromHandler (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:559:17)
+
+✖ [ PCODER ]  𝐅𝐚𝐢𝐥 leavenoti
+    → Error: Tên module bị trùng với một module mang cùng tên khác!
+    at /root/filefree-Pbot/main.js:416:72
+    at /root/filefree-Pbot/f/Main.js:1221:17
+    at tryCatcher (/root/filefree-Pbot/f/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:729:18)
+    at Promise._fulfill (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:673:18)
+    at Promise._resolveCallback (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:466:57)
+    at Promise._settlePromiseFromHandler (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:559:17)
+    at Promise._settlePromise (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:729:18)
+    at Promise._fulfill (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:673:18)
+    at Promise._resolveCallback (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:466:57)
+    at Promise._settlePromiseFromHandler (/root/filefree-Pbot/f/node_modules/bluebird/js/release/promise.js:559:17)

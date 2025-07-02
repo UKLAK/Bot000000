@@ -1,7 +1,7 @@
 {
-  "name": "Pcoder",
+  "name": "Unknown",
   "version": "1.0.0",
-  "description": "Pcoder",
+  "description": "Unknown",
   "main": "main.js",
   "scripts": {
     "start": "node index",
